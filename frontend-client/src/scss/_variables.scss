@@ -1,0 +1,74 @@
+@function color($color-name) {
+  @return map-get($theme-colors, $color-name);
+}
+
+@function font($font-name) {
+  @return map-get($font-families, $font-name);
+}
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+/* ================
+Colors
+=================*/
+
+$theme-colors: (
+  "primary": #4e73df,
+  "primary-hover": #2c5ae6,
+  "accent": #1cc88a,
+  "accent-hover": #17b67c,
+  "accent-two": #3B5998,
+  "accent-two-hover": #1748b3,
+  "warning": #EA4335,
+  "warning-hover": #e42412,
+  "alert": #f6c23e,
+  "light-primary": #fff,
+  "color-3": #f8f9fc,
+  "color-5": #f0f0f0,
+  "light-secondary": #d8d8d8,
+  "light-secondary-hover": #aaaaaa,
+  "color-1": #707070,
+  "text": #858796,
+  "color-2": #000,
+  "color-4": #0000001A,
+);
+
+/* ================
+Fonts
+=================*/
+
+$primary-font: 'Playfair Display', serif;
+$secondary-font: 'Zen Kaku Gothic Antique', sans-serif;
+$font-families: (
+  "primary": $primary-font,
+  "secondary": $secondary-font,
+);
+
+$font-weights: (
+  "regular": 400,
+  "medium-light": 500,
+  "medium": 600,
+  "bold": 700,
+);
+
+.jsk{
+  color: #143774; //front
+  color: #1792d2; //front
+ 
+  background-color: transparent;
+  background-color: rgba(153, 175, 199, 0.219);
+  
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .185);
+  box-shadow: 0 0 0 3px rgba(25, 114, 216, .219);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
+  
+  border: 20px solid #efefef;
+  border-bottom: 1px solid #70707057; //front
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  caret-color: #70707057;
+}

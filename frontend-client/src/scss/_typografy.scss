@@ -1,0 +1,182 @@
+/* ================
+Typografy
+=================*/
+
+body {
+    font-family: font("secondary");
+}
+
+h1,
+h2,
+h3 {
+  font-family: font("primary");
+  font-weight: weight("regular");
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+  outline: none;
+  cursor: pointer;
+}
+
+strong {
+  font-weight: weight("bold");
+}
+
+button,
+input {
+  font-family: font("secondary");
+  cursor: pointer;
+}
+
+/* Article */
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-info,
+.article-read-more {
+  font-size: .875rem;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: weight("bold");
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+.widget-title,
+.widget-recent-post-title {
+  font-size: 1rem;  
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-family: font("secondary");
+  font-weight: weight("bold");
+}
+
+.widget-recent-post-title {
+  font-weight: weight("medium");
+}
+
+/* Login */
+.login-section-title {
+  font-size: 1.5rem;
+  font-weight: weight("regular");
+}
+
+.checkbox-label {
+  font-size: .8rem;
+  margin-left: .5em;
+}
+
+.forgot-password-link {
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+/* AdminPage - Sidebar */
+.sidebar-nav,
+.sidebar-nav-title {
+  color: color("light-primary");
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidebar-nav-title {
+  font-size: 1rem;
+  font-weight: weight("bold");
+}
+
+.sidebar-nav-item {
+  opacity: 80%;
+  color: color("light-primary");
+  text-decoration: none;
+}
+
+.sidebar-nav-item:hover,
+.sidebar-nav-item:focus {
+  opacity: 100%;
+  color: color("light-primary");
+  outline: none;
+}
+
+.sidebar-nav-item,
+.sidebar-heading,
+.sidebar-textbox-text {
+  font-size: .7rem;
+}
+
+.sidebar-heading,
+.sidebar-textbox-text {
+  font-weight: weight("bold");
+  opacity: 50%;
+}
+
+.current-page-admin {
+  opacity: 100%;
+  font-weight: weight("bold");
+}
+
+.current-page-admin:hover,
+.current-page-admin:focus {
+  color: color("light-primary");
+}
+
+.material-icons { 
+  color: color("light-primary");
+  font-size: 1.1rem;
+
+  &.md-24 { 
+    font-size: 1.5rem;
+  }
+
+  &.bold { 
+    font-weight: weight("bold"); 
+  }
+
+  &.c-grey { 
+    color: color("light-secondary");
+    
+    &:hover {
+      color: color("light-secondary-hover");
+    }
+  }
+
+  &.c-primary {
+    color: color("primary");
+  }
+
+}
+
+/* Adminpage Header */
+.notification-box-date {
+  font-weight: weight("medium-light");
+  font-size: .7rem;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+.notification-box-text {
+  color: #000;
+  font-size: .95rem;
+  font-weight: weight("medium-light");
+}

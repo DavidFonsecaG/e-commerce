@@ -1,0 +1,76 @@
+/* ================
+Layout
+=================*/
+button {
+    max-width: 100%;
+
+    &:focus {
+        box-shadow: rgba(25, 114, 216, 0.219) 0px 0px 0px 3px;
+        outline: none;
+    }
+}
+
+/* Login Buttons */
+.btn-login {
+    color: #fff;
+    font-size: .8rem;
+    border: 0;
+    border-radius: 10rem;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    &.login-email {
+        background: #4e73df;
+    
+        &:hover {
+            background: #2c5ae6;
+        }
+    }
+    
+    &.login-google {
+        background: #EA4335;
+    
+        &:hover {
+            background: #e42412;
+        }
+    }
+    
+    &.login-facebook {
+        background: #3B5998;
+    
+        &:hover {
+            background: #1748b3;
+        }
+    }
+}
+
+/* Admin Sidebar Button */
+.btn-admin-sidebar {
+    color: #fff;
+    background-color: #1cc88a;
+    padding: .25em .5em;
+    border: 0;
+    border-radius: .2em;
+    margin-bottom: .8em;
+
+    &:hover {
+        background-color: #17b67c;
+    }
+}
+
+/* Admin Header Button */
+.btn-admin-header {
+    background-color: transparent;
+    border: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    margin: 0 .4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.btn-toggle:hover {
+        background-color: rgba(153, 175, 199, 0.219);
+    }
+}

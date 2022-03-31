@@ -1,0 +1,108 @@
+/* ====================
+Layout Notifications Btn Header adminpage
+=====================*/
+
+.notifications-icon-wrapper {
+    position: relative;
+
+    .notifications-btn:focus,
+    .notifications-btn:active {
+        box-shadow: none;
+    }
+
+    /* Badge */
+    .badge {
+        display: inline-block;
+        padding: 0.25em 0.4em;
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 0.35rem;
+    
+        &.badge-counter {
+            position: absolute;
+            top: 0;
+            transform: scale(.7);
+            right: 0;
+    
+            &.badge-danger {
+                background: #e74a3b;
+                color: #fff;
+            }
+        }
+    }
+    
+    /* Dropdown - Notifications */
+    .dropdown-notifications {
+        position: absolute;
+        top: 4em;
+        right: -1.5em;
+        width: 600%;
+        max-width: 320px;
+        background: #fff;
+        border-radius: .35em;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, 0.185);
+    
+        .dropdown-header {
+            margin: 0 auto;
+            padding: 1em;
+            padding-left: 2em;
+            color: #fff;
+            background: #4e73df;
+            border-top-left-radius: .35em;
+            border-top-right-radius: .35em;
+        }
+        
+        .dropdown-item {
+            padding: .7em;
+            text-decoration: none;
+            border-bottom: 1px solid #eeeeee;
+        
+            &:hover {
+                background: #f0f0f0;
+            }
+            
+            &:last-child {
+                padding: .6em;
+                justify-content: center;
+            }
+            
+            .wrapper-circle-icon {
+                width: 23%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .wrapper-body-icon {
+                width: 75%;
+                line-height: 1.2rem;
+            }
+        
+            .icon-circle {   
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+            
+                &.bg-primary {   
+                    background: #4e73df;
+                }
+                
+                &.bg-secondary {   
+                    background: #1cc88a;
+                }
+                
+                &.bg-warning {
+                    background-color: #f6c23e;
+                }
+            }
+        }
+    }
+}
+

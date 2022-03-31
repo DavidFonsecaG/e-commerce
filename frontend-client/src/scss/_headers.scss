@@ -1,0 +1,125 @@
+/* ====================
+Layout Header HomePage
+=====================*/
+
+.header {
+    width: 100%;
+    background: #fff;
+    padding: 1em 0;
+    margin-bottom: 3em;
+    // text-align: center;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+
+    /* Navigation */
+    .site-nav-bar {
+        display: none;
+
+        .nav-ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .nav-li {
+                display: flex;
+                align-items: center;
+
+                margin: 0 1em;
+
+                .nav-a {
+                    text-decoration: none;
+                    color: #707070;
+                    font-weight: 600;
+                    padding: .25em 0;
+        
+                    &:hover,
+                    &:focus {
+                        color: #1792d2;
+                    }
+                }
+                
+                .current-page {
+                    border-bottom: 1px solid #70707057;
+        
+                    &:hover,
+                    &:focus {
+                        color: #1792d2;
+                    }
+                }
+            }
+        }   
+    }
+    
+    @media (min-width: 730px) {
+
+        .toggle-menu-wrapper {
+            display: none;
+        }
+        
+        .site-title {
+            order: 1;
+        }
+        .site-nav-bar {
+            display: inline;
+            order: 2;
+        }
+
+        .shoppingBag-wrapper {
+            order: 3;
+        }
+
+    }
+}
+
+/* ====================
+Layout Header AdminPage
+=====================*/
+
+.header-admin {
+    width: 100%;
+    background: #fff;
+    padding: 1em 0;
+    margin-bottom: 3em;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+
+/* Topbar Search */
+.display-none-sx {
+    display: none;
+}
+
+.nav-ul-admin {
+    width: 85%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.nav-li-admin {
+    padding: 0;
+}
+
+@media (min-width: 730px) {
+    .btn-toggle {
+        display: none;
+    }
+
+    .display-none-sx {
+        min-height: 2.1112em;
+        display: flex;
+    }
+
+    .toggle-search-wrapper {
+        width: 60%;
+        max-width: 420px;
+    }
+
+    .nav-ul-admin {
+        width: 35%;
+    }
+
+}

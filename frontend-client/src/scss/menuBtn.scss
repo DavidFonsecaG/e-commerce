@@ -1,0 +1,53 @@
+/* ====================
+Layout Notifications Btn Header adminpage
+=====================*/
+
+.menu-btn-wrapper {
+    position: relative;
+    align-items: center;
+
+    .menu-btn:focus,
+    .menu-btn:active {
+        box-shadow: none;
+    }
+
+    /* Dropdown - Menu Header */
+    .dropdown-menu {
+        position: absolute;
+        z-index: 200;
+        top: 4em;
+        right: 0em;
+        width: 260%;
+        max-width: 150px;
+        background: #fff;
+        border-radius: .35em;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, 0.185);
+
+        .dropdown-menu-item {
+            padding: .7em;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+
+            &:first-child {
+                border-top-left-radius: .35em;
+                border-top-right-radius: .35em;
+            }
+
+            &:last-child {
+                border-bottom-left-radius: .35em;
+                border-bottom-right-radius: .35em;
+            }
+    
+            &:hover {
+                background: #f0f0f0;
+            }
+
+            .wrapper-menu-item-body {
+                width: 75%;
+                line-height: 1.2rem;
+            }
+
+        }
+    }
+}

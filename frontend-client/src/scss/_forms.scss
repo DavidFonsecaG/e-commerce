@@ -1,0 +1,29 @@
+/* ====================
+Layout
+=====================*/
+
+/* Admin Search Form */
+.form-admin {
+    min-height: 2.1112em;
+    display: flex;
+}
+
+.form-admin-input {
+    width: 100%;
+    background-color: #f8f9fc;
+    border: 0;
+    border-bottom-left-radius: 0.35em;
+    border-top-left-radius: 0.35em;
+    padding: 0 1.2em;
+    outline: none;
+}
+
+.form-admin-button {
+    color: #fff;
+    background-color: #4e73df;
+    padding: .2em .8em 0 .8em;
+    border: 0;
+    border-bottom-right-radius: 0.35em;
+    border-top-right-radius: 0.35em;
+}
+

@@ -1,0 +1,68 @@
+/* ================
+Layout
+=================*/
+
+/* Admin Sidebar */
+.container-admin-sidebar {
+    width: 17%;
+    min-height: 100vh;
+    background: #4e73df;
+    padding: 1em;
+}
+
+.sidebar-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hr-sidebar {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0;
+}
+
+.sidebar-nav-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 0;
+}
+
+.sidebar-nav-item-text {
+    margin: 0;
+}
+
+.sidebar-heading {
+    margin: .8em 0;
+}
+
+.sidebar-textbox {
+    display: none;
+    padding: 1em;
+    background: #0000001A;
+    border-radius: 0.35rem;
+    margin-top: 1em;
+}
+
+@media (min-width: 730px) {
+    .container-admin-sidebar {
+        width: 200px;
+    }
+
+    .sidebar-heading {
+        text-align: left;
+    }
+
+    .sidebar-nav-item {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .sidebar-nav-item-text {
+        margin-left: .5em;
+        font-size: .9rem;
+    }
+
+    .sidebar-textbox {
+        display: block;
+    }
+}
