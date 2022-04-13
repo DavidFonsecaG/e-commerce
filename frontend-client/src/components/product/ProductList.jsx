@@ -12,6 +12,7 @@ import ProductCard from './ProductCard';
 const ProductList = ({ categorie }) => {
   
   const products = useMemo(() => getProductsByCategorie(categorie), [categorie]);
+  console.log(products)
 
   return (
     <div className="products-list">
