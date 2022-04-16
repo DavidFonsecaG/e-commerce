@@ -44,6 +44,12 @@ const Header = () => {
               } to="/store">Store</NavLink>
             </li>
 
+            <li className='nav-li'>
+              <NavLink className={
+                ({ isActive }) => 'nav-a ' + (isActive ? 'current-page' : '')
+              } to="/admin">Admin</NavLink>
+            </li>
+
           </ul>
         </nav>
 

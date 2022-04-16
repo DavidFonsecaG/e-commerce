@@ -1,18 +1,21 @@
-import React, { useMemo } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProducts } from '../../actions/eComm';
 
 // Styles
 import '../../scss/productList.scss';
-
-// Selectors
-import {getProductsByCategorie} from '../../selectors/getProductsByCategorie';
 
 // Components
 import ProductCard from './ProductCard';
 
 const ProductList = ({ categorie }) => {
   
-  const products = useMemo(() => getProductsByCategorie(categorie), [categorie]);
-  console.log(products)
+  const dispatch = useDispatch()
+  const { products } = useSelector(state => state.eComm)
+
+  useEffect(() => {
+    dispatch( getProducts() )
+  }, [dispatch])
 
   return (
     <div className="products-list">

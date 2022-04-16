@@ -5,6 +5,7 @@ export const getProductsByCategorie = (categorie) => {
     axios
       .get("http://localhost:5000/api/product/list")
       .then(({ products }) => {
+        console.log(products)
         products.filter( product => product.categorie === categorie );
       })
       .catch((err) => {
