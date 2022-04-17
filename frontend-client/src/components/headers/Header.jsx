@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
+// Styles
+import '../../scss/headers.scss';
+
 // Componets
 import MenuBtn from '../menuBtn/MenuBtn';
 import ShoppingBagBtn from '../shoppingBagBtn/ShoppingBagBtn';
@@ -14,9 +17,10 @@ const Header = () => {
           <ShoppingBagBtn/>
         </div>
 
-        <div className="site-title">
-          <h1>Living the social life</h1>
-        </div>
+        <NavLink className="site-title" to="/">
+          <div className="site-logo"></div>
+          <h1>Ecommerce</h1>
+        </NavLink>
 
         <div className='toggle-menu-wrapper'>
           <MenuBtn />

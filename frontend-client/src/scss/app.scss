@@ -6,7 +6,6 @@
 @import './buttons';
 @import './footer';
 @import './forms';
-@import './headers';
 @import './home';
 @import './loginPage';
 @import './ShoppingBagBtn';
@@ -17,7 +16,7 @@
 
 body {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: color("text");
 }
 
@@ -37,7 +36,7 @@ Layout
 =================*/
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 

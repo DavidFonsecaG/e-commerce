@@ -3,31 +3,30 @@ Typografy
 =================*/
 
 body {
-    font-family: font("secondary");
+  font-family: font("secondary");
 }
 
 h1,
 h2,
 h3 {
   font-family: font("primary");
-  font-weight: weight("regular");
+  font-weight: weight("bold");
   margin-top: 0;
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0;
 }
 
 a {
-  color: #1792d2;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #143774;
   outline: none;
-  cursor: pointer;
+  cursor: default;
 }
 
 strong {
@@ -37,7 +36,6 @@ strong {
 button,
 input {
   font-family: font("secondary");
-  cursor: pointer;
 }
 
 /* Article */

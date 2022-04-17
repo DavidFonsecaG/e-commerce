@@ -15,11 +15,11 @@ Colors
 =================*/
 
 $theme-colors: (
-  "primary": #4e73df,
+  "primary": #8F1BDC,
   "primary-hover": #2c5ae6,
-  "accent": #1cc88a,
+  "accent": #2B044D,
   "accent-hover": #17b67c,
-  "accent-two": #3B5998,
+  "accent-two": #450B78,
   "accent-two-hover": #1748b3,
   "warning": #EA4335,
   "warning-hover": #e42412,
@@ -30,23 +30,25 @@ $theme-colors: (
   "light-secondary": #d8d8d8,
   "light-secondary-hover": #aaaaaa,
   "color-1": #707070,
-  "text": #858796,
   "color-2": #000,
   "color-4": #0000001A,
+  "text": #707B8E,
+  "background": #F4FEFF,
 );
 
 /* ================
 Fonts
 =================*/
 
-$primary-font: 'Playfair Display', serif;
-$secondary-font: 'Zen Kaku Gothic Antique', sans-serif;
+$primary-font: 'Nunito', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
 $font-families: (
   "primary": $primary-font,
   "secondary": $secondary-font,
 );
 
 $font-weights: (
+  "light": 200,
   "regular": 400,
   "medium-light": 500,
   "medium": 600,

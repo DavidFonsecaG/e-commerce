@@ -48,7 +48,7 @@ const ShoppingBagBtn = () => {
 
       <ButtonIcon
         className='shoppingBag-btn'
-        iconName='shopping_bag'
+        iconName='local_mall'
         onClick={handleToggle}
         classNameIcon='c-grey md-24'
       />
