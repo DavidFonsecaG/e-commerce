@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 // Styles
-import '../../scss/menuBtn.scss';
+import '../../../scss/menuBtn.scss';
 
 // Componets
-import ButtonIcon from '../buttons/ButtonIcon';
-import Backdrop from '../backdrop/Backdrop';
+import ButtonIcon from '../ButtonIcon';
+import Backdrop from '../../backdrop/Backdrop';
 
 const MenuBtn = () => {
 
@@ -25,12 +25,16 @@ const MenuBtn = () => {
   // Notifications Array
   const menuOptions = [
     {
-      linkTo: '/home',
+      linkTo: '/',
       item: 'Home'
     },
     {
       linkTo: '/about-us',
       item: 'About Us'
+    },
+    {
+      linkTo: '/store',
+      item: 'Store'
     }
   ];
 
@@ -53,7 +57,10 @@ const MenuBtn = () => {
             {
               menuOptions.map(({ linkTo, item }) => {
                 return (
-                  <NavLink className="container-flex-row dropdown-menu-item" to={linkTo}>
+                  <NavLink 
+                    className="container-flex-row dropdown-menu-item"
+                    to={linkTo}
+                  >
                     <div className="wrapper-menu-item-body">
                       <span className="notification-box-text">{item}</span>
                     </div>
@@ -64,7 +71,10 @@ const MenuBtn = () => {
 
             {
               true && (
-                <NavLink className="container-flex-row dropdown-menu-item" to={'/admin/dashboard'}>
+                <NavLink 
+                  className="container-flex-row dropdown-menu-item" 
+                  to={'/admin/dashboard'}
+                >
                   <div className="wrapper-menu-item-body">
                     <span className="notification-box-text">Admin</span>
                   </div>

@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 import '../../scss/headers.scss';
 
 // Componets
-import MenuBtn from '../menuBtn/MenuBtn';
-import ShoppingBagBtn from '../shoppingBagBtn/ShoppingBagBtn';
+import MenuBtn from '../buttons/menuBtn/MenuBtn';
+import ShoppingBagBtn from '../buttons/shoppingBagBtn/ShoppingBagBtn';
 
 const Header = () => {
 
@@ -25,7 +25,6 @@ const Header = () => {
         <div className='toggle-menu-wrapper'>
           <MenuBtn />
         </div>
-
 
         <nav className='site-nav-bar'>
           <ul className='nav-ul'>

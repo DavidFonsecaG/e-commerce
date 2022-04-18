@@ -1,4 +1,7 @@
 
+// Styles
+import '../../scss/forms.scss';
+
 const SearchFormAdmin = ({ className }) => {
   return (
     <form className={`form-admin ${ className }`} >

@@ -1,17 +1,15 @@
 @import './variables';
-/* ====================
-Layout Header HomePage
-=====================*/
 
+/* Layout Header HomePage */
 .header {
     display: flex;
     align-items: center;
     width: 100%;
     min-height: 5.5em;
-    background: color("background");
+    background: color("light-primary");
     padding: 1em 0;
     margin-bottom: 3em;
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    box-shadow: 0 .15rem 1.75rem 0 color("box-shadow");
     position: sticky;
     top: 0;
 
@@ -22,7 +20,6 @@ Layout Header HomePage
         .site-logo {
             width: 2.3em;
             height: 2.3em;
-            margin-right: .5em;
             background-image: url("../../public/img/logo.png");
             background-size: cover;
             background-position: bottom;
@@ -88,54 +85,51 @@ Layout Header HomePage
     }
 }
 
-/* ====================
-Layout Header AdminPage
-=====================*/
-
+/* Layout Header AdminPage */
 .header-admin {
     width: 100%;
-    background: #fff;
+    background: color("light-primary");
     padding: 1em 0;
     margin-bottom: 3em;
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
-}
+    box-shadow: 0 .15rem 1.75rem 0 color("box-shadow");
 
-/* Topbar Search */
-.display-none-sx {
-    display: none;
-}
-
-.nav-ul-admin {
-    width: 85%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-}
-
-.nav-li-admin {
-    padding: 0;
-}
-
-@media (min-width: 730px) {
-    .btn-toggle {
+    /* Topbar Search */
+    .display-none-sx {
         display: none;
     }
-
-    .display-none-sx {
-        min-height: 2.1112em;
-        display: flex;
-    }
-
-    .toggle-search-wrapper {
-        width: 60%;
-        max-width: 420px;
-    }
-
+    
     .nav-ul-admin {
-        width: 35%;
+        width: 85%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
     }
-
+    
+    .nav-li-admin {
+        padding: 0;
+    }
+    
+    @media (min-width: 730px) {
+        .btn-toggle {
+            display: none;
+        }
+    
+        .display-none-sx {
+            min-height: 2.1112em;
+            display: flex;
+        }
+    
+        .toggle-search-wrapper {
+            width: 60%;
+            max-width: 420px;
+        }
+    
+        .nav-ul-admin {
+            width: 35%;
+        }
+    
+    }
 }

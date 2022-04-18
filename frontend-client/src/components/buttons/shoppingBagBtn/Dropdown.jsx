@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 // Styles
-import '../../scss/dropdown.scss';
+import '../../../scss/dropdown.scss';
 
 
 const Dropdown = ({array}) => {
@@ -13,14 +13,14 @@ const Dropdown = ({array}) => {
           array.map(({ type, price, product, linkTo }) => {
             return (
               <NavLink className="container-flex-row dropdown-item" to={linkTo}>
-                <div className="wrapper-circle-icon">
-                  <div className={`icon-circle ${type.bg}`}>
-                    <span className="material-icons md-18">{type.icon}</span>
+                <div className="wrapper-item-img">
+                  <div className={`item-img ${type.bg}`}>
+                    <span className="material-icons-outlined md-24">{type.icon}</span>
                   </div>
                 </div>
-                <div className="wrapper-body-icon">
-                  <span className="notification-box-text">{product}</span>
-                  <div className="notification-box-date">{price}</div>
+                <div className="wrapper-item-body">
+                  <span className="item-body-text">{product}</span>
+                  <div className="item-body-price">{price}</div>
                 </div>
               </NavLink>
             )
@@ -28,7 +28,7 @@ const Dropdown = ({array}) => {
         }
 
         <NavLink className="container-flex-row dropdown-item" to={'/cart'}>
-          <p className="notification-box-date">See Shopping Bag</p>
+          <p className="item-body-price">See Shopping Bag</p>
         </NavLink>
 
       </div>

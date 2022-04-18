@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 // Styles
-import '../../scss/shoppingBagBtn.scss';
+import '../../../scss/shoppingBagBtn.scss';
 
 // Componets
-import ButtonIcon from '../buttons/ButtonIcon';
+import ButtonIcon from '../ButtonIcon';
 import Dropdown from './Dropdown';
-import Backdrop from '../backdrop/Backdrop';
+import Backdrop from '../../backdrop/Backdrop';
 
 const ShoppingBagBtn = () => {
 
@@ -21,13 +21,13 @@ const ShoppingBagBtn = () => {
   // Shopping Bag Array
   const shoppingBag = [
     {
-      type: { icon: 'description', bg: 'bg-primary' },
+      type: { icon: 'warning', bg: 'bg-primary' },
       price: '$ 9,99',
       product: 'T-Shirt Logo Brand',
       linkTo: '/product/aaa'
     },
     {
-      type: { icon: 'paid', bg: 'bg-secondary' },
+      type: { icon: 'warning', bg: 'bg-secondary' },
       price: '$99,99',
       product: 'Airpods Max 3',
       linkTo: '/product/bbb'
@@ -48,12 +48,12 @@ const ShoppingBagBtn = () => {
 
       <ButtonIcon
         className='shoppingBag-btn'
-        iconName='local_mall'
+        iconName='shopping_bag'
         onClick={handleToggle}
         classNameIcon='c-grey md-24'
       />
       {/* Badge */}
-      <span className="badge badge-counter badge-danger">{lenght}+</span>
+      <span className="badge badge-counter badge-danger">{lenght}</span>
 
       {/* Dropdown */}
       {
@@ -63,6 +63,7 @@ const ShoppingBagBtn = () => {
           />
         )
       }
+      
       <Backdrop 
         show={shoppingbagToggle}
         click={handleToggle}

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import ButtonIcon from '../buttons/ButtonIcon';
-import SearchFormAdmin from '../forms/SearchFormAdmin';
+import ButtonIcon from '../ButtonIcon';
+import SearchFormAdmin from '../../forms/SearchFormAdmin';
+
+// Styles
+import '../../../scss/searchFormBtn.scss';
 
 
 const SearchFormBtn = () => {

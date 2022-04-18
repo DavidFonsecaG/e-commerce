@@ -1,10 +1,8 @@
-/* ================
-Layout
-=================*/
+@import './variables';
 
 /* Articles */
 .article-featured {
-    border-bottom: #70707057 1px solid;
+    border-bottom: color("border") 1px solid;
     padding-bottom: 2em;
     margin-bottom: 2em;
 }
@@ -56,19 +54,17 @@ Layout
 
 /* Widgets */
 .sidebar-widget {
-    border: 20px solid #efefef;
+    border: 20px solid color("background");
     margin-bottom: 2em;
     padding: 1em;
 }
 
 .widget-recent-post {
     margin-bottom: 1em;
-    border-bottom: 1px solid #70707057;
+    border-bottom: 1px solid color("border");
 }
 
 .widget-recent-post:last-child {
     margin: 0;
     border: 0;
 }
-
-

@@ -1,6 +1,6 @@
-/* ====================
-Layout Search Btn Header Adminpage
-=====================*/
+@import './variables';
+
+/* Layout Search Btn Header Adminpage */
 .search-btn:focus,
 .search-btn:active {
     box-shadow: none;
@@ -16,9 +16,9 @@ Layout Search Btn Header Adminpage
     right: -6em;
     width: 660%;
     padding: .5em;
-    background: #fff;
+    background: color("light-primary");
     border-radius: 0.25em;
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    box-shadow: 0 .15rem 1.75rem 0 color("box-shadow");
 }
 
 @media (min-width: 730px) {

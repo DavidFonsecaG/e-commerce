@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import ButtonIcon from '../buttons/ButtonIcon';
+
+// Styles
+import '../../../scss/notificationsBtn.scss'
+
+// Componets
+import ButtonIcon from '../ButtonIcon';
 
 
 const NotificationBtn = () => {
@@ -50,7 +55,7 @@ const NotificationBtn = () => {
         showNotifications && (
           <div className="dropdown-notifications">
 
-            <h6 className="dropdown-header">ALERTS CENTER</h6>
+            <h5 className="dropdown-header">ALERTS CENTER</h5>
 
             {
               notifications.map(({ type, date, notification }) => {
@@ -62,8 +67,8 @@ const NotificationBtn = () => {
                       </div>
                     </div>
                     <div className="wrapper-body-icon">
-                      <div className="notification-box-date">{date}</div>
-                      <span className="notification-box-text">{notification}</span>
+                      <div className="item-body-price">{date}</div>
+                      <span className="item-body-text">{notification}</span>
                     </div>
                   </NavLink>
                 )
@@ -71,7 +76,7 @@ const NotificationBtn = () => {
             }
 
             <NavLink className="container-flex-row dropdown-item" to={'/admin/notifications'}>
-              <p className="notification-box-date">Show all alerts</p>
+              <p className="item-body-price">Show all alerts</p>
             </NavLink>
 
           </div>

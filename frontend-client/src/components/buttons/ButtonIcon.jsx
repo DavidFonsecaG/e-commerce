@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+
 const ButtonIcon = ({ className, iconName, type, onClick, disabled, classNameIcon }) => {
   return (
     <>
@@ -9,7 +10,7 @@ const ButtonIcon = ({ className, iconName, type, onClick, disabled, classNameIco
         onClick={onClick}
         disabled={disabled}
       >
-        <span className={`material-icons ${ classNameIcon }`}> { iconName }</span> 
+        <span className={`material-icons-outlined ${ classNameIcon }`}>{ iconName }</span>
       </button>
     </>
   )

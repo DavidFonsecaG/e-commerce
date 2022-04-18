@@ -1,12 +1,11 @@
-/* ================
-Layout
-=================*/
+@import './variables';
 
+/* Login Page Layout */
 .container-login {
     min-height: 100vh;
     max-width: 100vw;
     margin: 0 auto;
-    background: #4e73df;
+    background: color("admin-primary");
 }
 
 .container-login-flex {
@@ -15,12 +14,12 @@ Layout
 }
 
 .login-section {
-    background: #fff;
+    background: color("light-primary");
     text-align: center;
     border-radius: .3em;
     margin: 1.5em;
     padding: 2em 3em;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 6px 20px 0 color("box-shadow");
 }
 
 .login-section:first-child {
@@ -39,11 +38,11 @@ Layout
 
 /* Input */
 .form-input {
-    border: 1px solid #70707057;
+    border: 1px solid color("border");
     border-radius: 10rem;
     padding: 1em 1.5em;
     margin-bottom: 1em;
-    caret-color: #70707057;
+    caret-color: color("border");
 }
 
 /* Checkbox */
@@ -56,13 +55,13 @@ Layout
 .checkbox-input:focus,
 .checkbox-input:active {
     outline: none;
-    box-shadow: rgba(25, 114, 216, 0.219) 0px 0px 0px 3px;
-    border: 1px solid #90a1d3b0;
+    box-shadow: color("box-shadow-active") 0px 0px 0px 3px;
+    border: 1px solid color("border-two");
 }
 
 /* Hr */
 .hr-login {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid color("border");
 }
   
 @media (min-width:730px) {

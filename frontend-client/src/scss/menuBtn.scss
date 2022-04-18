@@ -1,7 +1,6 @@
-/* ====================
-Layout Notifications Btn Header adminpage
-=====================*/
+@import './variables';
 
+/* Menu Btn */
 .menu-btn-wrapper {
     position: relative;
     align-items: center;
@@ -19,15 +18,16 @@ Layout Notifications Btn Header adminpage
         right: 0em;
         width: 260%;
         max-width: 150px;
-        background: #fff;
+        background: color("light-primary");
         border-radius: .35em;
-        box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, 0.185);
+        box-shadow: 0 .15rem 1.75rem 0 color("box-shadow");
 
         .dropdown-menu-item {
             padding: .7em;
             text-decoration: none;
             text-align: center;
             justify-content: center;
+            border-bottom: 1px solid color("border");
 
             &:first-child {
                 border-top-left-radius: .35em;
@@ -40,14 +40,17 @@ Layout Notifications Btn Header adminpage
             }
     
             &:hover {
-                background: #f0f0f0;
+                background: color("border");
             }
 
             .wrapper-menu-item-body {
                 width: 75%;
                 line-height: 1.2rem;
-            }
 
+                .notification-box-text {
+                    color: color("accent");
+                }
+            }
         }
     }
 }

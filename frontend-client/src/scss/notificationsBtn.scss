@@ -1,7 +1,6 @@
-/* ====================
-Layout Notifications Btn Header adminpage
-=====================*/
+@import './variables';
 
+/* Notifications Btn Layout */
 .notifications-icon-wrapper {
     position: relative;
 
@@ -29,8 +28,8 @@ Layout Notifications Btn Header adminpage
             right: 0;
     
             &.badge-danger {
-                background: #e74a3b;
-                color: #fff;
+                background: color("warning");
+                color: color("light-primary");
             }
         }
     }
@@ -42,16 +41,16 @@ Layout Notifications Btn Header adminpage
         right: -1.5em;
         width: 600%;
         max-width: 320px;
-        background: #fff;
+        background: color("light-primary");
         border-radius: .35em;
-        box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, 0.185);
+        box-shadow: 0 .15rem 1.75rem 0 color("box-shadow");
     
         .dropdown-header {
             margin: 0 auto;
             padding: 1em;
             padding-left: 2em;
-            color: #fff;
-            background: #4e73df;
+            color: color("light-primary");
+            background: color("admin-primary");
             border-top-left-radius: .35em;
             border-top-right-radius: .35em;
         }
@@ -59,10 +58,10 @@ Layout Notifications Btn Header adminpage
         .dropdown-item {
             padding: .7em;
             text-decoration: none;
-            border-bottom: 1px solid #eeeeee;
+            border-bottom: 1px solid color("border");
         
             &:hover {
-                background: #f0f0f0;
+                background: color("border");
             }
             
             &:last-child {
@@ -91,15 +90,15 @@ Layout Notifications Btn Header adminpage
                 justify-content: center; 
             
                 &.bg-primary {   
-                    background: #4e73df;
+                    background: color("admin-primary");
                 }
                 
                 &.bg-secondary {   
-                    background: #1cc88a;
+                    background: color("success");
                 }
                 
                 &.bg-warning {
-                    background-color: #f6c23e;
+                    background-color: color("alert");
                 }
             }
         }

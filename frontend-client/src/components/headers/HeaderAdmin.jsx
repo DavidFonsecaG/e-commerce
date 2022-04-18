@@ -1,10 +1,15 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { ToggleOn, ToggleOff } from '../../actions/ui';
-import AvatarBtn from '../avatarBtn/AvatarBtn';
-import ButtonIcon from '../buttons/ButtonIcon'
+
+// Styles
+// import '../../../scss/shoppingBagBtn.scss'
+
+// Componets
 import SearchFormAdmin from '../forms/SearchFormAdmin'
-import NotificationBtn from '../notificationBtn/NotificationBtn';
-import SearchFormBtn from '../searchFormBtn/SearchFormBtn';
+import AvatarBtn from '../buttons/avatarBtn/AvatarBtn';
+import ButtonIcon from '../buttons/ButtonIcon'
+import NotificationBtn from '../buttons/notificationBtn/NotificationBtn';
+import SearchFormBtn from '../buttons/searchFormBtn/SearchFormBtn';
 
 
 const HeaderAdmin = ({ handleLogout }) => {

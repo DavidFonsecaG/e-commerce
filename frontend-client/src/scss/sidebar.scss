@@ -1,12 +1,10 @@
-/* ================
-Layout
-=================*/
+@import './variables';
 
 /* Admin Sidebar */
 .container-admin-sidebar {
-    width: 17%;
+    width: 20%;
     min-height: 100vh;
-    background: #4e73df;
+    background: color("admin-primary");
     padding: 1em;
 }
 
@@ -17,7 +15,7 @@ Layout
 }
 
 .hr-sidebar {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid color("border-three");
     margin: 0;
 }
 
@@ -38,7 +36,7 @@ Layout
 .sidebar-textbox {
     display: none;
     padding: 1em;
-    background: #0000001A;
+    background: color("box-shadow");
     border-radius: 0.35rem;
     margin-top: 1em;
 }

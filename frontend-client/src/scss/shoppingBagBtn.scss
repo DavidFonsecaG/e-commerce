@@ -1,7 +1,6 @@
-/* ====================
-Layout Notifications Btn Header adminpage
-=====================*/
+@import './variables';
 
+/* Shopping Bag */
 .shoppingBag-icon-wrapper {
     position: relative;
 
@@ -12,15 +11,14 @@ Layout Notifications Btn Header adminpage
 
     /* Badge */
     .badge {
-        display: inline-block;
-        padding: 0.25em 0.4em;
+        height: 1.5rem;
+        width: 1.5rem;
         font-size: .8rem;
         font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: baseline;
-        border-radius: 0.35rem;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
 
         &.badge-counter {
             position: absolute;
@@ -29,10 +27,9 @@ Layout Notifications Btn Header adminpage
             right: 0;
     
             &.badge-danger {
-                background: #e74a3b;
-                color: #fff;
+                background: color("primary");
+                color: color("light-primary");
             }
         }
     }
-    
 }

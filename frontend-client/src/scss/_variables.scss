@@ -10,36 +10,28 @@
   @return map-get($font-weights, $weight-name);
 }
 
-/* ================
-Colors
-=================*/
-
-$theme-colors: (
-  "primary": #8F1BDC,
-  "primary-hover": #2c5ae6,
+/* Colors */
+$theme-colors: (  
+  "admin-primary": #4e73df,
   "accent": #2B044D,
-  "accent-hover": #17b67c,
   "accent-two": #450B78,
-  "accent-two-hover": #1748b3,
-  "warning": #EA4335,
-  "warning-hover": #e42412,
-  "alert": #f6c23e,
-  "light-primary": #fff,
-  "color-3": #f8f9fc,
-  "color-5": #f0f0f0,
-  "light-secondary": #d8d8d8,
-  "light-secondary-hover": #aaaaaa,
-  "color-1": #707070,
-  "color-2": #000,
-  "color-4": #0000001A,
+  "primary": #8F1BDC,
   "text": #707B8E,
-  "background": #F4FEFF,
+  "text-light": #aaaaaa,
+  "light-primary": #fff,
+  "light-accent": #f8f9fc,
+  "background": #eefeff,
+  "border" : #eeeeee,
+  "border-two" : #90a1d3b0,
+  "border-three": rgba(255, 255, 255, 0.15),
+  "box-shadow": rgba(0, 0, 0, 0.15),
+  "box-shadow-active": rgba(25, 114, 216, .219),
+  "success": #1cc88a,
+  "alert": #f6c23e,
+  "warning": #EA4335,
 );
 
-/* ================
-Fonts
-=================*/
-
+/* Fonts */
 $primary-font: 'Nunito', sans-serif;
 $secondary-font: 'Poppins', sans-serif;
 $font-families: (
@@ -55,22 +47,25 @@ $font-weights: (
   "bold": 700,
 );
 
-.jsk{
-  color: #143774; //front
-  color: #1792d2; //front
+$jsk: (
+  "primary-hover": #2c5ae6,
+  "accent-two-hover": #1748b3,
+  "warning-hover": #e42412,
+  "color-3": #f8f9fc,
+  "color-7": #f0f0f0,
+  "light-secondary": #d8d8d8,
+  "color-1": #707070,
+  "color-2": #000,
+  "color-4": #0000001A,
+  "color-5": #143774, //front
+  "color-6": #1792d2, //front
  
-  background-color: transparent;
-  background-color: rgba(153, 175, 199, 0.219);
-  
-  box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
-  box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .185);
-  box-shadow: 0 0 0 3px rgba(25, 114, 216, .219);
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
-  
-  border: 20px solid #efefef;
-  border-bottom: 1px solid #70707057; //front
-  border-bottom: 1px solid #eeeeee;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  caret-color: #70707057;
-}
+  "background-color": transparent,
+  "background-color-1": rgba(153, 175, 199, 0.219),
+    
+  "border": 20px solid #efefef,
+  "border-bottom": 1px solid #70707057, //front
+  "border-bottom-1": 1px solid #eeeeee,
+  "border-top": 1px solid rgba(0, 0, 0, 0.1),
+  "caret-color": #70707057,
+)

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
+// Styles
+import '../../../scss/avatarBtn.scss';
 
 const AvatarBtn = ({ handleLogout }) => {
 
@@ -35,8 +37,8 @@ const AvatarBtn = ({ handleLogout }) => {
 
       <div className='avatar-divider'></div>
 
-      <h6 className="avatar-username-text">{ name }</h6>
-      {/* <h6 className="avatar-username-text">David Fonseca</h6> */}
+      {/* <h6 className="avatar-username-text">{ name }</h6> */}
+      <h6 className="avatar-username-text">David Fonseca</h6>
 
       <button
         className='avatar-btn container-flex-row'
@@ -56,15 +58,16 @@ const AvatarBtn = ({ handleLogout }) => {
                       <span className="material-icons md-18 c-grey">{icon}</span>
                     </div>
                     <div className="wrapper-item-body">
-                      <span className="notification-box-text">{item}</span>
+                      <span className="item-body-text">{item}</span>
                     </div>
                   </NavLink>
                 )
               })
             }
 
-            <button
-              className='container-flex-row dropdown-avatar-item avatar-logout-btn'
+            <NavLink
+              className='container-flex-row dropdown-avatar-item '
+              to={"/"}
               onClick={handleLogout}
             >
 
@@ -73,10 +76,10 @@ const AvatarBtn = ({ handleLogout }) => {
               </div>
 
               <div className="wrapper-item-body">
-                <span className="notification-box-text">Logout</span>
+                <span className="item-body-text">Logout</span>
               </div>
 
-            </button>
+            </NavLink>
 
           </div>
         )

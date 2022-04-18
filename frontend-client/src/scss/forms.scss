@@ -1,6 +1,4 @@
-/* ====================
-Layout
-=====================*/
+@import './variables';
 
 /* Admin Search Form */
 .form-admin {
@@ -10,7 +8,7 @@ Layout
 
 .form-admin-input {
     width: 100%;
-    background-color: #f8f9fc;
+    background-color: color("light-accent");
     border: 0;
     border-bottom-left-radius: 0.35em;
     border-top-left-radius: 0.35em;
@@ -19,8 +17,8 @@ Layout
 }
 
 .form-admin-button {
-    color: #fff;
-    background-color: #4e73df;
+    color: color("light-primary");
+    background-color: color("admin-primary");
     padding: .2em .8em 0 .8em;
     border: 0;
     border-bottom-right-radius: 0.35em;

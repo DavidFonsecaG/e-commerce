@@ -1,0 +1,97 @@
+@import './variables';
+
+/* avartarBtn Layout */
+.avatar-btn-wrapper {
+    position: relative;
+    align-items: center;
+
+    .avatar-divider,
+    .avatar-username-text {
+        display: none;
+    }
+
+    .avatar-btn {
+        border: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 100%;
+        margin-left: 1em;
+        background-image: url("../../public/img/undraw_profile_2.svg");
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+
+    .avatar-btn:focus,
+    .avatar-btn:active {
+        box-shadow: none;
+    }
+
+    @media (min-width:730px) {
+        .avatar-divider {
+            display: inline;
+            width: 0;
+            border-right: 1px solid color("border");
+            height: calc(4.375rem - 2rem);
+            margin: auto 1rem;
+        }
+
+        .avatar-btn {
+            margin: 0;
+        }
+    }
+
+    @media (min-width:1000px) {
+        .avatar-username-text {
+            display: inline;
+            margin: 0;
+            padding-right: 1em;
+        }
+
+        .avatar-btn {
+            margin: 0;
+        }
+    }
+}
+
+/* Dropdown - Avatar */
+.dropdown-avatar {
+    position: absolute;
+    top: 4em;
+    right: 0em;
+    width: 260%;
+    max-width: 150px;
+    background: color("light-primary");
+    border-radius: .35em;
+    box-shadow: 0 .15rem 1.75rem 0 color("box-shadow");
+
+    .dropdown-avatar-item {
+        padding: .7em;
+        text-decoration: none;
+        border-bottom: 1px solid color("border");
+
+        &:first-child {
+            border-top-left-radius: .35em;
+            border-top-right-radius: .35em;
+        }
+
+        &:last-child {
+            padding: 1em;
+        }
+
+        &:hover {
+            background: color("border");
+        }
+        
+        .wrapper-item-icon {
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .wrapper-item-body {
+            width: 65%;
+            line-height: 1.2rem;
+        }
+    }
+}

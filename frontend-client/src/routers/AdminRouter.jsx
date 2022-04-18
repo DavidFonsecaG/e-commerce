@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { startLogout } from '../actions/auth';
+
+// Components
 import HeaderAdmin from '../components/headers/HeaderAdmin';
 import SidebarAdmin from '../components/sidebar/SidebarAdmin';
 import DashboardPage from '../pages/admin/DashboardPage';

@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
+// Styles
+import '../../scss/sidebar.scss';
 
 const SidebarAdmin = ({ handleLogout }) => {
   return (
