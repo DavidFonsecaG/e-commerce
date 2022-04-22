@@ -36,26 +36,17 @@
     flex-direction: column;
 }
 
-/* Input */
-.form-input {
-    border: 1px solid color("border");
-    border-radius: 10rem;
-    padding: 1em 1.5em;
-    margin-bottom: 1em;
-    caret-color: color("border");
-}
-
 /* Checkbox */
 .checkbox-group {
     text-align: left;
     margin-bottom: 1em;
 }
 
-.form-input:focus,
+
 .checkbox-input:focus,
 .checkbox-input:active {
     outline: none;
-    box-shadow: color("box-shadow-active") 0px 0px 0px 3px;
+    box-shadow: color("box-shadow") 0px 0px 0px 3px;
     border: 1px solid color("border-two");
 }
 

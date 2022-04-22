@@ -2,25 +2,24 @@
 // Styles
 import '../../scss/footer.scss';
 
+// Componenets
+
 
 const Footer = () => {
   return (
-    <footer className="">
-      <div>
-        <form action="">
-          <input 
-            type="text" 
-            className="form-admin-input"
-            placeholder="Search for..."
-            aria-label="Search" 
-            aria-describedby="basic-addon2" 
-          />
-          <button className="" type="button">
-            Yes Please
-          </button>
-        </form>
-        <p><strong>Living the Simple Life</strong></p>
-        <p>Copyright 2019</p>
+    <footer className="container container-1300">
+      <form autoComplete="off" className="footer-form">
+        <input
+          type="email"
+          className="form-input"
+          placeholder="Enter Email Address to Join our Mailng List..."
+          name="email"
+        />
+        <button type='submit'>Yes, Please</button>
+      </form>
+      <div className="container-flex footer-text">
+        <p><strong>Follow us</strong></p>
+        <p>© 2021 All Rights Reserved. Developed by David Fonseca.</p>
       </div>
     </footer>
   )

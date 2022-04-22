@@ -62,27 +62,28 @@
             }
         }   
     }
-    
-    @media (min-width: 730px) {
 
+    @media (min-width: 730px) {
+        
         .toggle-menu-wrapper {
             display: none;
         }
         
         .site-title {
             order: 1;
-            width: 65%;
         }
+
         .site-nav-bar {
             display: flex;
             order: 2;
         }
 
         .shoppingBag-wrapper {
-            order: 3;
+            display: none;
         }
 
     }
+    
 }
 
 /* Layout Header AdminPage */

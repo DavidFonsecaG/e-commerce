@@ -41,6 +41,7 @@ strong {
 button,
 input {
   font-family: font("secondary");
+  font-size: 1rem;
 }
 
 /* Article */
@@ -156,4 +157,9 @@ input {
   color: color("text-light");
   font-weight: weight("medium-light");
   margin: 0;
+}
+
+/* Footer */
+.footer-text {
+  font-size: .9rem;
 }

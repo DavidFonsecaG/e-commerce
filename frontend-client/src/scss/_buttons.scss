@@ -2,48 +2,26 @@
 Layout
 =================*/
 button {
-    max-width: 100%;
+    width: 100%;
+    color: #fff;
+    border: 0;
+    border-radius: 10rem;
+    padding: .8em;
+    margin-bottom: 1em;
+    background: color("primary");
+
+    &:hover {
+        background: color("accent");
+    }
 
     &:focus {
-        box-shadow: rgba(25, 114, 216, 0.219) 0px 0px 0px 3px;
+        box-shadow: color("box-shadow") 0px 0px 0px 3px;
         outline: none;
-    }
-}
-
-/* material-icons */
-.material-icons-outlined { 
-    color: color("light-primary");
-    font-size: 1.1rem;
-  
-    &.md-24 { 
-      font-size: 1.5rem;
-    }
-  
-    &.bold { 
-      font-weight: weight("bold"); 
-    }
-  
-    &.c-grey { 
-      color: color("accent");
-      
-      &:hover {
-        color: color("accent-two");
-      }
-    }
-  
-    &.c-primary {
-      color: color("primary");
     }
 }
 
 /* Login Buttons */
 .btn-login {
-    color: #fff;
-    font-size: .8rem;
-    border: 0;
-    border-radius: 10rem;
-    padding: 1em;
-    margin-bottom: 1em;
 
     &.login-email {
         background: #4e73df;
@@ -86,7 +64,6 @@ button {
 
 /* Admin Header Button */
 .btn-admin-header {
-    background-color: transparent;
     border: 0;
     height: 2.5rem;
     width: 2.5rem;
@@ -95,8 +72,39 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+
+    &:hover {
+        background-color: color("light-primary");
+    }
 
     &.btn-toggle:hover {
         background-color: rgba(153, 175, 199, 0.219);
+    }
+}
+
+/* material-icons */
+.material-icons-outlined { 
+    color: color("light-primary");
+    font-size: 1.1rem;
+  
+    &.md-24 { 
+      font-size: 1.5rem;
+    }
+  
+    &.bold { 
+      font-weight: weight("bold");
+    }
+  
+    &.c-grey { 
+      color: color("accent");
+      
+      &:hover {
+        color: color("accent-two");
+      }
+    }
+  
+    &.c-primary {
+      color: color("primary");
     }
 }
