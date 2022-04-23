@@ -22,7 +22,7 @@ const HomePage = () => {
         </div>
 
 
-        <article className="article-recent">
+        <article className="container container-90 article-recent">
           <div className="article-recent-secondary">
             <img src="img/food.jpg" alt="two dumplings on a wood plate with chopsticks" className="article-image" />
             <p className="article-info">July 19, 2019 | 3 comments</p>

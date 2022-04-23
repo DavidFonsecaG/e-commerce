@@ -4,6 +4,7 @@
 .container-color {
     background-color: color("background");
     padding-top: 3em;
+    display: grid;
     
     .container {
         position: relative;
