@@ -7,7 +7,7 @@ import '../../scss/footer.scss';
 
 const Footer = () => {
   return (
-    <footer className="container container-1300">
+    <footer className="container container-90 container-1300">
       <form autoComplete="off" className="footer-form">
         <input
           type="email"

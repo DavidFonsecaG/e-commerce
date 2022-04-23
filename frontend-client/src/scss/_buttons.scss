@@ -7,16 +7,12 @@ button {
     border: 0;
     border-radius: 10rem;
     padding: .8em;
-    margin-bottom: 1em;
+    margin: .5em 0;
     background: color("primary");
+    box-shadow: 0 0 1.50rem .5rem color("box-shadow");
 
     &:hover {
         background: color("accent");
-    }
-
-    &:focus {
-        box-shadow: color("box-shadow") 0px 0px 0px 3px;
-        outline: none;
     }
 }
 
@@ -73,6 +69,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    box-shadow: none;
 
     &:hover {
         background-color: color("light-primary");

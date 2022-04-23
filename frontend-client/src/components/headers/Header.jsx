@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <div className="container container-1300 container-flex-row">
+      <div className="container container-90 container-1300 container-flex-row">
 
         <div className='shoppingBag-wrapper'>
           <ShoppingBagBtn/>

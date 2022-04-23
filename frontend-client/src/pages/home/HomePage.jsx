@@ -3,17 +3,24 @@ import '../../scss/home.scss';
 
 const HomePage = () => {
   return (
-    <div className="container-flex">
+    <div className="container">
 
-      <main className="container container-1300 container-main">
+        <div className="container-color">
+          <article className="container container-90 container-flex container-1300">
+            <div className="article-main-body">
+              <h1 className="article-title article-container">Shopping Made Easy With Ecommerce</h1>
+              <p className="article-body article-container">Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusm tempor incididunt ulabore et dolore magna aliqua.</p>
+              <div className="article-button">
+                <button>Go to Store</button>
+              </div>
+            </div>
+            <div className="article-main-img">
+              <img src="img/Image-hero.jpg" alt="simple white desk on a white wall with a plant on the far right side" className="article-imagee" />
+            </div>
+          </article>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fff" fill-opacity="1" d="M0,160L120,160C240,160,480,160,720,133.3C960,107,1200,53,1320,26.7L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+        </div>
 
-        <article className="article-featured">
-          <h2 className="article-title">Finding simplicity in life</h2>
-          <img src="img/life.jpg" alt="simple white desk on a white wall with a plant on the far right side" className="article-image" />
-          <p className="article-info">July 23, 2019 | 3 comments</p>
-          <p className="article-body"><strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to simplify your life, <a href="#">a few of which we've explored in the past</a>. This week we're taking a bit of a approach though, in how you can find simplicity in the life you already living.</p>
-          <a href="#" className="article-read-more">CONTINUE READING</a>
-        </article>
 
         <article className="article-recent">
           <div className="article-recent-secondary">
@@ -49,10 +56,9 @@ const HomePage = () => {
             <p className="article-body">A home isn't a home until you've decorated a little. People either don't decorate, or they go overboard and it doesn't have the impact they were hoping for. Staying simple will help draw the eye where you want it to and make things pop like never before.</p>
             <a href="#" className="article-read-more">CONTINUE READING</a>
           </div>
-
         </article>
 
-      </main>
+
       
     </div>
   );
