@@ -44,9 +44,14 @@
 
 .container-no-color {
     margin: 8em 0;
-    background-image: img();
-
+    background-image: url("../../public/img/bg.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat; 
+    
     .container-secondary {
+        display: flex;
+        flex-direction: column;
         margin: 0 auto;
 
         .article-secondary-body {
@@ -75,11 +80,8 @@
                 width: 55%;
                 text-align: start;
                 margin-top: 5em;
+                padding-left: 5em;
                 min-height: 0;
-                
-                .article-button {
-                    margin: 1em 0;
-                }
             }
             
             .article-main-img {
@@ -91,43 +93,40 @@
                 width: 55%;
                 text-align: start;
                 margin-top: 0;
-                
-                .article-button {
-                    margin: 1em 0;
-                }
+                padding-left: 5em;
             }
 
             .article-main-img-two {
                 width: 45%;
-                top: -10em;
+                top: -17em;
             }
         }
     }
 
-    .article-image {
-        order: -2;
+    .container-no-color {
+        background-size: contain;
+        background-position: center;
+
+        .container-secondary {
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .article-secondary-body {
+                order: -1;
+                text-align: start;
+                width: 55%;
+            }
+
+            .article-secondary-image {
+                order: -2;
+                width: 40%;
+                max-height: 210px;
+                object-fit: contain;
+            }
+        }
     }
 
-    .article-info {
-        order: -1;
+    .article-button {
+        margin: 1em 0;
     }
-    .article-recent {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .article-recent-main {
-        width: 68%;
-    }
-
-    .article-recent-secondary {
-        width: 30%;
-    }
-
-    .article-image {
-        width: 100%;
-        min-height: 210px;
-        object-fit: cover;
-    }
-
 }

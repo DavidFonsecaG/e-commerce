@@ -31,8 +31,8 @@ const HomePage = () => {
                 <button>Go to Store</button>
               </div>
             </div>
-            <div className="article-recent-secondary">
-              <img src="img/food.jpg" alt="two dumplings on a wood plate with chopsticks" className="article-image" />
+            <div className="article-secondary-image">
+              <img src="img/Image-hero.jpg" alt="two dumplings on a wood plate with chopsticks" className="article-image" />
             </div>
           </article>
         </div>
@@ -48,7 +48,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="article-main-img-two">
-              <img src="img/work.jpg" alt="simple white desk on a white wall with a plant on the far right side" className="article-imagee" />
+              <img src="img/Image-hero.jpg" alt="simple white desk on a white wall with a plant on the far right side" className="article-imagee" />
             </div>
           </article>
         </div>
