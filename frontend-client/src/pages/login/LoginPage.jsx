@@ -31,78 +31,74 @@ const LoginPage = () => {
   }
 
   return (
-    <div className="container-login container-login-flex">
+    <div className="container container-login-color">
 
-      <div className="login-section"></div>
+      <div className="container-90 container-login-flex">
 
-      <div className="login-section">
-        <form autoComplete="off" onSubmit={handleLogin}>
+        <div className="login-section"></div>
 
-          <p className="login-section-title">Welcome Back!</p>
+        <div className="login-section">
+          <form onSubmit={handleLogin}>
 
-          <div className="form-group">
-            <input
-              type="email"
-              className="form-input"
-              placeholder="Enter Email Address..."
-              name="email"
-              value={email}
-              onChange={handleInputChange}
-            />
-            <input
-              type="password"
-              className="form-input"
-              placeholder="Password"
-              name="password"
-              value={password}
-              onChange={handleInputChange}
-            />
-          </div>
+            <p className="login-section-title">Welcome Back!</p>
 
-          <div className="checkbox-group">
-            <input
-              type="checkbox"
-              className="checkbox-input"
-              id="customCheck"
-            />
-            <label
-              className="checkbox-label"
-              htmlFor="customCheck"
-            >Remember Me</label>
-          </div>
+            <div className="form-group">
+              <input
+                type="email"
+                placeholder="Enter Email Address..."
+                name="email"
+                value={email}
+                onChange={handleInputChange}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={password}
+                onChange={handleInputChange}
+              />
+            </div>
 
-          <div className="form-group">
-            <ButtonLogin
-              buttonName='Login'
-              type='submit'
-              className='login-email'
-            />
+            <div className="checkbox-group">
+              <input
+                type="checkbox"
+                className="checkbox-input"
+                id="customCheck"
+              />
+              <label
+                className="checkbox-label"
+                htmlFor="customCheck"
+              ><span>Remember Me</span></label>
+            </div>
 
-            <hr className="hr-login" />
+            <div className="form-group">
+              <ButtonLogin
+                buttonName='Login'
+                type='submit'
+                className='login-email'
+              />
 
-            <ButtonLogin
-              buttonName='Login with Google'
-              type='submit'
-              className='login-google'
-            />
+              <ButtonLogin
+                buttonName='Login with Google'
+                type='submit'
+                className='login-google'
+              />
 
-            <ButtonLogin
-              buttonName='Login with Facebook'
-              type='submit'
-              className='login-facebook'
-            />
-          </div>
+              <ButtonLogin
+                buttonName='Login with Facebook'
+                type='submit'
+                className='login-facebook'
+              />
+            </div>
 
-          <hr className="hr-login" />
+            <div className="text-center">
+              <Link
+                className="forgot-password-link" to="/forgot-password">Forgot Password?</Link>
+            </div>
 
-          <div className="text-center">
-            <Link
-              className="forgot-password-link" to="/forgot-password">Forgot Password?</Link>
-          </div>
-
-        </form>
+          </form>
+        </div>
       </div>
-
     </div>
   );
 };

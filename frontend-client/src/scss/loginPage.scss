@@ -1,80 +1,78 @@
 @import './variables';
 
 /* Login Page Layout */
-.container-login {
+.container-login-color {
     min-height: 100vh;
-    max-width: 100vw;
-    margin: 0 auto;
     background: color("admin-primary");
-}
-
-.container-login-flex {
     display: flex;
-    flex-direction: column;
-}
+    align-items: center;
+    justify-content: center;
 
-.login-section {
-    background: color("light-primary");
-    text-align: center;
-    border-radius: .3em;
-    margin: 1.5em;
-    padding: 2em 3em;
-    box-shadow: 0 6px 20px 0 color("box-shadow");
-}
-
-.login-section:first-child {
-    display: none;
-}
-
-.login-section-title {
-    padding-bottom: .5em;
-  }
-
-/* Form */
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Checkbox */
-.checkbox-group {
-    text-align: left;
-    margin-bottom: 1em;
-}
-
-
-.checkbox-input:focus,
-.checkbox-input:active {
-    outline: none;
-    box-shadow: color("box-shadow") 0px 0px 0px 3px;
-    border: 1px solid color("border-two");
-}
-
-/* Hr */
-.hr-login {
-    border-top: 1px solid color("border");
-}
-  
-@media (min-width:730px) {
     .container-login-flex {
-        justify-content: center;
-        flex-direction: row;
-    }
+        margin: 0 auto;
+    
+        .login-section {
+            background: color("light-primary");
+            text-align: center;
+            border-radius: .3em;
+            padding: 2em;
+            box-shadow: 0 6px 20px 0 color("box-shadow");
+        
+            &:first-child {
+                display: none;
+            }
+            
+            .login-section-title {
+                padding-bottom: .5em;
+            }
+            
+            /* Form */
+            .form-group {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            /* Checkbox */
+            .checkbox-group {
+                display: flex;
+                text-align: left;
+                margin: 1em;
 
-    .login-section {
-        width: 45%;
-        max-width: 430px;
-        max-height: 500px;
-        margin: 1.5em 0;
-        border-radius: 0 .3em .3em 0;
-    }
+                .checkbox-input {
+                    width: 4%;
+                }
 
-    .login-section:first-child {
-        display: inline;
-        border-radius: .3em 0 0 .3em;
-        background-image: url("../../public/img/dog.jpg");
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
+                .checkbox-label {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:800px) {
+    .container-login-color {
+        .container-login-flex {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+
+            .login-section {
+                width: 45%;
+                max-width: 470px;
+                border-radius: 0 .3em .3em 0;
+
+                &:first-child {
+                    display: inline;
+                    border-radius: .3em 0 0 .3em;
+                    background-image: url("../../public/img/dog.jpg");
+                    background-size: cover;
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
     }
 }
