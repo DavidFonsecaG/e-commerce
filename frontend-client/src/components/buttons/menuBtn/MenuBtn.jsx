@@ -46,7 +46,7 @@ const MenuBtn = () => {
         className='menu-btn'
         iconName='menu'
         onClick={handleMenuToggle}
-        classNameIcon='c-grey md-24'
+        classNameIcon='md-24'
       />
 
       {/* Dropdown - Menu */}

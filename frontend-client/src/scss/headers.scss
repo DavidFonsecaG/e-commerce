@@ -6,24 +6,56 @@
     align-items: center;
     width: 100%;
     min-height: 5.5em;
-    background: color("light-primary");
+    background: color("transparent");
     padding: 1em 0;
-    box-shadow: 0 .15rem 0.75rem 0 color("box-shadow");
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
+    transition: 0.5s;
+    
+    &.small {
+        min-height: auto;
+        padding: .7em 0;
+        background: color("light-primary");
+        box-shadow: 0 .15rem 0.75rem 0 color("box-shadow");
+
+        .site-title,
+        .material-icons-outlined {
+            color: color("text");
+        }
+
+        .site-nav-bar {
+            .nav-ul {
+                .nav-li {
+                    .nav-a{
+                        color: color("text");
+
+                        &:hover,
+                        &:focus {
+                            color: color("text");
+                        }
+                    }
+
+                    .current-page {
+                        color: color("text");
+                        border-bottom: .14rem solid color("text-light");
+                    }
+                }
+            }
+        }
+    }
 
     .site-title {
         display: flex;
-        color: color("accent");
+        align-items: center;
+        color: color("light-primary");
 
         .site-logo {
-            width: 2.3em;
-            height: 2.3em;
-            background-image: url("../../public/img/logo.png");
-            background-size: cover;
-            background-position: bottom;
-            background-repeat: no-repeat;
+            width: 2.5em;
+            height: 2.5em;
+            margin-right: .7em;
+            border-radius: 100%;
+            border: .14rem solid;
         }
     }
 
@@ -43,25 +75,21 @@
                 align-items: center;
                 margin: 0 1em;
 
-                &:last-child {
-                    margin: 0;
-                }
-
                 .nav-a {
                     text-decoration: none;
-                    color: color("accent-two");
-                    font-family: font("secondary");
-                    font-weight: weight("regular");
+                    color: color("text-light");
+                    font-family: font("primary");
                     padding: .25em 0;
         
                     &:hover,
                     &:focus {
-                        font-weight: weight("bold");
+                        color: color("light-primary");
                     }
                 }
                 
                 .current-page {
-                    font-weight: weight("bold");
+                    color: color("light-primary");
+                    border-bottom: .14rem solid color("light-primary");
                 }
             }
         }   

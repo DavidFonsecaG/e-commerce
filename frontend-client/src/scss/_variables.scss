@@ -12,15 +12,17 @@
 
 /* Colors */
 $theme-colors: (  
-  "admin-primary": #4e73df,
+  "primary": #e8233f,
+  "primary-accent": #b91c32,
+  "light-primary": #fff,
+  "dark-primary": #000,
+  "text": #4b4d52,
+  "text-light": #aaaaaa,
   "accent": #2B044D,
   "accent-two": #450B78,
-  "primary": #8F1BDC,
   "secondary": rgb(18, 207, 81),
-  "text": #707B8E,
-  "text-light": #aaaaaa,
-  "light-primary": #fff,
   "light-accent": #f8f9fc,
+  "admin-primary": #4e73df,
   "background": #f8f2fd,
   "border" : #eeeeee,
   "border-two" : #90a1d3b0,
@@ -30,18 +32,20 @@ $theme-colors: (
   "success": #1cc88a,
   "alert": #f6c23e,
   "warning": #EA4335,
+  "transparent": transparent,
 );
 
 /* Fonts */
-$primary-font: 'Nunito', sans-serif;
-$secondary-font: 'Poppins', sans-serif;
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
 $font-families: (
   "primary": $primary-font,
   "secondary": $secondary-font,
 );
 
 $font-weights: (
-  "light": 200,
+  "extra-light": 200,
+  "light": 300,
   "regular": 400,
   "medium-light": 500,
   "medium": 600,

@@ -3,7 +3,7 @@ Layout
 =================*/
 button {
     width: 100%;
-    color: #fff;
+    color: color("light-primary");
     border: 0;
     border-radius: 10rem;
     padding: .8em;
@@ -12,7 +12,7 @@ button {
     box-shadow: 0 0 1.50rem .5rem color("box-shadow");
 
     &:hover {
-        background: color("accent");
+        background: color("primary-accent");
     }
 }
 
@@ -72,7 +72,7 @@ button {
     box-shadow: none;
 
     &:hover {
-        background-color: color("light-primary");
+        background-color: color("transparent");
     }
 
     &.btn-toggle:hover {

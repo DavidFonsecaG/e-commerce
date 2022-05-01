@@ -43,29 +43,28 @@
 }
 
 .container-no-color {
-    margin: 8em 0;
-    background-image: url("../../public/img/bg.png");
+    min-height: 100vh;
+    background-image: url("https://placeimg.com/2000/925/arch/grayscale");
     background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat; 
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     
     .container-secondary {
-        display: flex;
-        flex-direction: column;
         margin: 0 auto;
 
         .article-secondary-body {
             text-align: center;
             display: flex;
-            flex-direction: column;
-            margin: 3em 0;            
+            flex-direction: column;         
         }
     }
 }
 
 .article-button {
     margin: 1em auto;
-    width: 40%;
+    width: 50%;
 }
 
 .article-container {
@@ -110,23 +109,15 @@
         .container-secondary {
             flex-direction: row;
             justify-content: space-between;
+            padding-top: 5em;
             
-            .article-secondary-body {
-                order: -1;
-                text-align: start;
-                width: 55%;
-            }
-
-            .article-secondary-image {
-                order: -2;
-                width: 40%;
-                max-height: 210px;
-                object-fit: contain;
+            .article-button {
+                width: 20%;
             }
         }
     }
 
     .article-button {
-        margin: 1em 0;
+        width: 40%;
     }
 }

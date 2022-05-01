@@ -8,7 +8,7 @@ const connectDB = async () => {
 
     console.log('Database sucessfully connected!');
   } catch (error) {
-    console.log('Error while initializing DB!' + error);
+    console.log('Error while initializing DB! ' + error);
     process.exit(1);
   }
 }

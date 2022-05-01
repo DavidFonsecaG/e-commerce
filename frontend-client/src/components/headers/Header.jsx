@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom';
 
 // Styles
@@ -5,21 +6,26 @@ import '../../scss/headers.scss';
 
 // Componets
 import MenuBtn from '../buttons/menuBtn/MenuBtn';
-import ShoppingBagBtn from '../buttons/shoppingBagBtn/ShoppingBagBtn';
 
 const Header = () => {
 
-  return (
-    <header className='header'>
-      <div className="container container-90 container-1300 container-flex-row">
+  const [small, setSmall] = useState(false);
 
-        <div className='shoppingBag-wrapper'>
-          <ShoppingBagBtn/>
-        </div>
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setSmall(window.pageYOffset > 50)
+      );
+    }
+  }, []);
+
+  return (
+    <header className={`header ${small ? "small" : ""}`}>
+      <div className="container container-90 container-1300 container-flex-row">
 
         <NavLink className="site-title" to="/">
           <div className="site-logo"></div>
-          <h1>Ecommerce</h1>
+          <h1 className="site-text">GO ESTUDIOS</h1>
         </NavLink>
 
         <div className='toggle-menu-wrapper'>
@@ -32,29 +38,25 @@ const Header = () => {
             <li className='nav-li'>
               <NavLink className={
                 ({ isActive }) => 'nav-a ' + (isActive ? 'current-page' : '')
-              } to="/">Home</NavLink>
+              } to="/">INICIO</NavLink>
             </li>
 
             <li className='nav-li'>
               <NavLink className={
                 ({ isActive }) => 'nav-a ' + (isActive ? 'current-page' : '')
-              } to="/about-us">About Us</NavLink>
+              } to="/nosotros">NOSOTROS</NavLink>
+            </li>
+            
+            <li className='nav-li'>
+              <NavLink className={
+                ({ isActive }) => 'nav-a ' + (isActive ? 'current-page' : '')
+              } to="/contactanos">CONTACTO</NavLink>
             </li>
 
             <li className='nav-li'>
               <NavLink className={
                 ({ isActive }) => 'nav-a ' + (isActive ? 'current-page' : '')
-              } to="/store">Store</NavLink>
-            </li>
-
-            <li className='nav-li'>
-              <NavLink className={
-                ({ isActive }) => 'nav-a ' + (isActive ? 'current-page' : '')
-              } to="/admin">Admin</NavLink>
-            </li>
-
-            <li className='nav-li'>
-              <ShoppingBagBtn/>
+              } to="/blog">BLOG</NavLink>
             </li>
 
           </ul>
