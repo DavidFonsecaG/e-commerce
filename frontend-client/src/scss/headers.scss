@@ -19,7 +19,9 @@
         background: color("light-primary");
         box-shadow: 0 .15rem 0.75rem 0 color("box-shadow");
 
-        .site-title,
+        .site-title {
+            color: color("dark-primary");
+        }
         .material-icons-outlined {
             color: color("text");
         }

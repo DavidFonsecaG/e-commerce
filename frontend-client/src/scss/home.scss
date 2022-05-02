@@ -1,19 +1,47 @@
 @import './variables';
 
+.article-button {
+    margin: 1em auto;
+    width: 50%;
+}
+
+.article-container {
+    margin: .5em 0;
+}
+
+.container-slider {
+    min-height: 100vh;
+    background-image: url("https://placeimg.com/2000/925/arch/grayscale");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+    .container-secondary {
+        margin: 0 auto;
+
+        .article-secondary-body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;        
+        }
+    }
+}
+
 .container-color {
-    background-color: color("background");
+    background-color: color("light-primary");
     display: grid;
+    transition: 10s;
     
     .container-main {
         margin: 0 auto;
-        position: relative;
 
         .article-main-body {
             text-align: center;
             display: flex;
             flex-direction: column;
-            margin-top: 3em;
-            min-height: 30em;
+            margin: 4.5em 0;
     
             .article-container {
                 margin: .5em 0;
@@ -21,7 +49,6 @@
         }
 
         .article-main-img {
-            position: absolute;
             bottom: -10em;
             right: 0;
         }
@@ -42,33 +69,30 @@
     }
 }
 
-.container-no-color {
-    min-height: 100vh;
-    background-image: url("https://placeimg.com/2000/925/arch/grayscale");
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    
-    .container-secondary {
-        margin: 0 auto;
+.bg-dark-color {
+    background-color: color("dark-accent");
 
-        .article-secondary-body {
-            text-align: center;
-            display: flex;
-            flex-direction: column;         
+    .article-main-title,
+    .article-three-title {
+        color: color("light-primary");
+    }
+
+    .title-one {
+        color: color("primary");
+    }
+
+    .title-one,
+    .article-button {
+        visibility: hidden;
+    }
+
+    &:hover {
+
+        .title-one,
+        .article-button {
+            visibility: visible;
         }
     }
-}
-
-.article-button {
-    margin: 1em auto;
-    width: 50%;
-}
-
-.article-container {
-    margin: .5em 0;
 }
 
 @media (min-width: 730px) {
@@ -102,7 +126,7 @@
         }
     }
 
-    .container-no-color {
+    .container-slider {
         background-size: contain;
         background-position: center;
 

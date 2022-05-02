@@ -25,7 +25,7 @@ const Header = () => {
 
         <NavLink className="site-title" to="/">
           <div className="site-logo"></div>
-          <h1 className="site-text">GO ESTUDIOS</h1>
+          <h1 className="site-text">go estudios</h1>
         </NavLink>
 
         <div className='toggle-menu-wrapper'>
