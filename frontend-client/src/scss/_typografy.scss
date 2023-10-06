@@ -4,14 +4,14 @@ Typografy
 
 body {
   font-family: font("secondary");
+  font-weight: weight("light");
 }
 
 h1,
 h2,
 h3 {
   font-family: font("primary");
-  font-weight: weight("bold");
-  margin-top: 0;
+  font-weight: weight("regular");
 }
 
 h6 {
@@ -37,17 +37,72 @@ button,
 input {
   font-family: font("secondary");
   font-size: 1rem;
+  font-weight: weight("bold");
 }
 
-/* Article */
+/* Header */
+.site-text {
+  font-size: 1.5rem;
+  font-weight: weight("medium");
+}
+
+.nav-a {
+  font-size: .8rem;
+  font-weight: weight("medium");
+}
+
+
+/* Home */
 .article-title {
+  font-weight: weight("bold");
+  color: color("light-primary");
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+}
+
+.article-body {
+  font-weight: weight("bold");
+  color: color("light-primary");
+  font-size: 1.2rem;
+}
+
+.article-main-title {
+  color: color("primary");
+  font-weight: weight("bold");
+  letter-spacing: .4rem;
+}
+
+.article-main-text {
+  font-size: 3rem;
+  font-weight: weight("light");
+  line-height: 4rem;
+}
+
+.article-main-text-two {
+  font-size: 3.8rem;
+  font-weight: weight("bold");
+  line-height: 4rem;
+  background: -webkit-linear-gradient(0deg, #ff0783, #ffe600 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.article-three-title {
   font-size: 2.5rem;
-  color: color("accent");
+  font-weight: weight("bold");
+  line-height: 2.8rem;
+}
+
+.article-three-text {
+  font-size: 1.5rem;
+  font-weight: weight("light");
+  line-height: 2.5rem;
 }
 
 @media (min-width: 730px) {
   .article-title {
-    font-size: 3.5rem;
+    margin: 0;
+    font-size: 6rem;
   }
 }
 
