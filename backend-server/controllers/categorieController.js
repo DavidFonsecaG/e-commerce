@@ -1,4 +1,4 @@
-const models = require('../models'); //este es el indez de carpeta 'models'
+const models = require('../models'); //este es el index de carpeta 'models'
 
 module.exports = {
     add: async (req, res, next) => {
@@ -118,7 +118,7 @@ module.exports = {
     },
 
     // Delete Method
-    delete: async (req,res,next) => {
+    remove: async (req,res,next) => {
 
         try {
 

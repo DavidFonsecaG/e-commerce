@@ -1,45 +1,58 @@
-require('dotenv').config();
 const express = require('express');
-const connectDB = require('./config/db');
-const morgan = require('morgan');
-const cors = require('cors');
 const path = require('path');
+const history = require('connect-history-api-fallback');
+const { createServer } = require('http');
+const { Server } = require('socket.io');
+const connectDB = require('./config/db.js');
+const { logger } = require('./config/logger.js');
+const { corsOptions, handleCors } = require('./middleware/cors.js');
+const { handleErrors } = require('./middleware/error.js');
+const { handleNotFound } = require('./middleware/notFound.js');
+const apiRouter = require('./routes/index.js');
 
-const apiRouter = require('./routes/index');
-const app = express();
+// Load environment variables
+const dotenv = require('dotenv');
+dotenv.config();
 
-// Connecting bd
+// Connect to the database
 connectDB();
 
-// Middleware
-app.use(morgan('tiny'));
-app.use(cors());
+// Create an Express app
+const app = express();
 
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
-    next();
-});
+// Apply middleware
+app.use(handleCors(corsOptions), logger, express.json(), express.urlencoded({ extended: true }));
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// Routes
-app.get('/', function (req, res) {
-    res.send('Server')
-});
-
-// Middleware
+// API routes
 app.use('/api', apiRouter);
 
-const history = require('connect-history-api-fallback');
+// Serve static assets in production
 app.use(history());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Port
-app.set('PORT', process.env.PORT || 5000);
-app.listen(app.get('PORT'), function () {
-    console.log('Running on port ' + app.get('PORT'));
+// Default route
+app.get('/', (req, res) => {
+  res.send('Server is running.');
 });
+
+// Error handling middleware
+app.use(handleErrors());
+
+// Not found middleware
+app.use(handleNotFound());
+
+// Create an HTTP server and attach Socket.IO to it
+const server = createServer(app);
+const io = new Server(server);
+
+// Start the server
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
+
+// Handle Socket.IO connections
+io.on('connection', (socket) => {
+  console.log(`Socket.IO client connected: ${socket.id}`);
+});
+
